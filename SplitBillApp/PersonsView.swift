@@ -80,6 +80,7 @@ class PersonsView: UIView {
     }
 
 }
+
 extension PersonsView {
     
    private func setConstraints() {
@@ -90,16 +91,16 @@ extension PersonsView {
             backView.topAnchor.constraint(equalTo: personsLabel.bottomAnchor, constant: 2),
             backView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             backView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            backView.heightAnchor.constraint(equalToConstant: 100),
+            backView.heightAnchor.constraint(equalToConstant: 80),
             
             minusButton.topAnchor.constraint(equalTo: backView.topAnchor, constant: 0),
             minusButton.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: 0),
-            minusButton.widthAnchor.constraint(equalToConstant: 80),
+            minusButton.widthAnchor.constraint(equalToConstant: 60),
             minusButton.heightAnchor.constraint(equalTo: backView.heightAnchor),
             
             plusButton.topAnchor.constraint(equalTo: backView.topAnchor, constant: 0),
             plusButton.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: 0),
-            plusButton.widthAnchor.constraint(equalToConstant: 80),
+            plusButton.widthAnchor.constraint(equalToConstant: 60),
             plusButton.heightAnchor.constraint(equalTo: backView.heightAnchor),
             
             counterLabel.centerYAnchor.constraint(equalTo: backView.centerYAnchor),
