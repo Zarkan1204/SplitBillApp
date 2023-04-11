@@ -86,7 +86,7 @@ extension PersonsView {
    private func setConstraints() {
         NSLayoutConstraint.activate([
             personsLabel.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-            personsLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
+            personsLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             
             backView.topAnchor.constraint(equalTo: personsLabel.bottomAnchor, constant: 2),
             backView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),

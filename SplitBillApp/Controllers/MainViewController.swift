@@ -40,6 +40,7 @@ class MainViewController: UIViewController {
 
     private let totalBillView = TotalBillView()
     private let personsView = PersonsView()
+    private let tipsView = TipsView()
     
     private lazy var calculateButton: UIButton = {
         let button = UIButton(type: .system)
@@ -68,6 +69,7 @@ class MainViewController: UIViewController {
        view.addSubview(totalBillView)
        view.addSubview(personsView)
        view.addSubview(calculateButton)
+       view.addSubview(tipsView)
     }
 
 }
@@ -97,11 +99,16 @@ extension MainViewController {
             personsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             personsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             personsView.heightAnchor.constraint(equalToConstant: 100),
+             
+            tipsView.topAnchor.constraint(equalTo: personsView.bottomAnchor, constant: 10),
+            tipsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            tipsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            tipsView.heightAnchor.constraint(equalToConstant: 130),
             
             calculateButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             calculateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             calculateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            calculateButton.heightAnchor.constraint(equalToConstant: 60)
+            calculateButton.heightAnchor.constraint(equalToConstant: 60),
         ])
     }
 }

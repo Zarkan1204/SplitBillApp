@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA46378329E5846600748869 /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46378229E5846600748869 /* TipsCollectionViewCell.swift */; };
+		FA46378929E586AD00748869 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46378829E586AD00748869 /* TipsView.swift */; };
 		FA67AA4E29DBEE650020AA2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67AA4D29DBEE650020AA2E /* AppDelegate.swift */; };
 		FA67AA5029DBEE650020AA2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67AA4F29DBEE650020AA2E /* SceneDelegate.swift */; };
 		FA67AA5229DBEE650020AA2E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67AA5129DBEE650020AA2E /* MainViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA46378229E5846600748869 /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA46378829E586AD00748869 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		FA67AA4A29DBEE650020AA2E /* SplitBillApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitBillApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA67AA4D29DBEE650020AA2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA67AA4F29DBEE650020AA2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA46378429E5848300748869 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA67AA4D29DBEE650020AA2E /* AppDelegate.swift */,
+				FA67AA4F29DBEE650020AA2E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FA46378529E584A500748869 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA67AA5129DBEE650020AA2E /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA46378629E584BC00748869 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA46378729E5850300748869 /* Cells */,
+				FA46378829E586AD00748869 /* TipsView.swift */,
+				FAF7F72429DEA83A003A14C8 /* TotalBillView.swift */,
+				FAF7F72629DEBAB3003A14C8 /* PersonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA46378729E5850300748869 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA46378229E5846600748869 /* TipsCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		FA67AA4129DBEE650020AA2E = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +98,9 @@
 		FA67AA4C29DBEE650020AA2E /* SplitBillApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA67AA4D29DBEE650020AA2E /* AppDelegate.swift */,
-				FA67AA4F29DBEE650020AA2E /* SceneDelegate.swift */,
-				FA67AA5129DBEE650020AA2E /* MainViewController.swift */,
-				FAF7F72429DEA83A003A14C8 /* TotalBillView.swift */,
-				FAF7F72629DEBAB3003A14C8 /* PersonsView.swift */,
+				FA46378429E5848300748869 /* Application */,
+				FA46378529E584A500748869 /* Controllers */,
+				FA46378629E584BC00748869 /* Views */,
 				FA67AA5629DBEE690020AA2E /* Assets.xcassets */,
 				FA67AA5829DBEE690020AA2E /* LaunchScreen.storyboard */,
 				FA67AA5B29DBEE690020AA2E /* Info.plist */,
@@ -143,6 +181,8 @@
 				FAF7F72529DEA83A003A14C8 /* TotalBillView.swift in Sources */,
 				FAF7F72729DEBAB3003A14C8 /* PersonsView.swift in Sources */,
 				FA67AA5229DBEE650020AA2E /* MainViewController.swift in Sources */,
+				FA46378929E586AD00748869 /* TipsView.swift in Sources */,
+				FA46378329E5846600748869 /* TipsCollectionViewCell.swift in Sources */,
 				FA67AA4E29DBEE650020AA2E /* AppDelegate.swift in Sources */,
 				FA67AA5029DBEE650020AA2E /* SceneDelegate.swift in Sources */,
 			);
