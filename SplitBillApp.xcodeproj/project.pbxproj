@@ -101,11 +101,19 @@
 				FA46378429E5848300748869 /* Application */,
 				FA46378529E584A500748869 /* Controllers */,
 				FA46378629E584BC00748869 /* Views */,
+				FAC4B15229E94BAE0082C22C /* SupportingFiles */,
+			);
+			path = SplitBillApp;
+			sourceTree = "<group>";
+		};
+		FAC4B15229E94BAE0082C22C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				FA67AA5629DBEE690020AA2E /* Assets.xcassets */,
 				FA67AA5829DBEE690020AA2E /* LaunchScreen.storyboard */,
 				FA67AA5B29DBEE690020AA2E /* Info.plist */,
 			);
-			path = SplitBillApp;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UM9F85RKC2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SplitBillApp/Info.plist;
+				INFOPLIST_FILE = SplitBillApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -356,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UM9F85RKC2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SplitBillApp/Info.plist;
+				INFOPLIST_FILE = SplitBillApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

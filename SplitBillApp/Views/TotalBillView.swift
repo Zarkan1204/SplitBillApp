@@ -18,11 +18,12 @@ class TotalBillView: UIView {
         return label
     }()
     
-    private let summTextField: UITextField = {
+    public let summTextField: UITextField = {
        let textField = UITextField()
         textField.backgroundColor = #colorLiteral(red: 0.9561659694, green: 0.9591339231, blue: 0.9530903697, alpha: 1)
         textField.layer.cornerRadius = 10
         textField.textColor = .black
+        textField.tintColor = #colorLiteral(red: 0.639077723, green: 0.2492567599, blue: 0.6254395843, alpha: 1)
         textField.font = UIFont(name: "Avenir Next Bold", size: 50)
         textField.textAlignment = .center
         textField.keyboardType = .numberPad

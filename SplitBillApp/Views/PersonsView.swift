@@ -31,6 +31,8 @@ class PersonsView: UIView {
         button.setTitle("-", for: .normal)
         button.tintColor = #colorLiteral(red: 0.4510066509, green: 0.4966486692, blue: 0.5633206367, alpha: 1)
         button.titleLabel?.font = UIFont(name: "Avenir Next", size: 80)
+        button.addTarget(self, action: #selector(minusButtonTapped), for: .touchUpInside)
+        button.isEnabled = false
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -40,13 +42,14 @@ class PersonsView: UIView {
         button.setTitle("+", for: .normal)
         button.tintColor = #colorLiteral(red: 0.4510066509, green: 0.4966486692, blue: 0.5633206367, alpha: 1)
         button.titleLabel?.font = UIFont(name: "Avenir Next", size: 60)
+        button.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
     private let counterLabel: UILabel = {
        let label = UILabel()
-        label.text = "2"
+        label.text = "0"
         label.textColor = .black
         label.textAlignment = .center
         label.font = UIFont(name: "Avenir Next Bold", size: 48)
@@ -54,7 +57,7 @@ class PersonsView: UIView {
         return label
     }()
     
-    
+    public var counter = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -79,6 +82,20 @@ class PersonsView: UIView {
 
     }
 
+    @objc private func minusButtonTapped() {
+        counter -= 1
+        counterLabel.text = "\(counter)"
+        
+        if counter == 0 {
+            minusButton.isEnabled = false
+        }
+    }
+    
+    @objc private func plusButtonTapped() {
+        counter += 1
+        counterLabel.text = "\(counter)"
+        minusButton.isEnabled = true
+    }
 }
 
 extension PersonsView {
